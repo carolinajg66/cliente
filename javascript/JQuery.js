@@ -13,6 +13,14 @@ $(document).ready(function(){
 
 .after(inserta(lo que sea/elemento) despues del elemento que hayamos seleccionado)
 
+.remove(eliminar)
+
+.remplacewith(cambiar el contenido con lo que pongas dentro del parentesis)
+
+boton.addEvenListener("click", "funcion(cerrarbanner)", "booleano--> false")--> esta escuchando
+
+document.getElementById("id_banner").addEvenLoistener("click", "funcion(cerrarbanner)", "booleano--> false")--> esta escuchando
+
 */
 
 });

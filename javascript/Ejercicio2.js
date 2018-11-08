@@ -1,3 +1,4 @@
+/*POner dos campos y que si no se rellenar que aparezca un mensaje despues del campo(input)*/
 $(document).ready(function(){
     var nombre=document.getElementById("nombre");
 
@@ -26,7 +27,7 @@ $(document).ready(function(){
         }
         if(apellidosa==""){
             apellido.after("Tienes que escribir el apellido");
-
+0
         }
 
     })*/
