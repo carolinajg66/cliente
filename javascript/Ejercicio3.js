@@ -3,7 +3,8 @@ $(document).ready(function(){
 
   document.getElementById("id_cerrar").addEventListener("click", cerrar_banner, false);
 
-  document.getElementById("id_cambiar1").addEventListener("click", cambiarImagen, false);
+  var imagen1=  document.getElementById("id_cambiar1");
+  imagen1.cambiarImagen();
   document.getElementById("id_cambiar2").addEventListener("click", cambiarImagen, false);
   document.getElementById("id_cambiar3").addEventListener("click", cambiarImagen, false);
   document.getElementById("id_cambiar4").addEventListener("click", cambiarImagen, false);
