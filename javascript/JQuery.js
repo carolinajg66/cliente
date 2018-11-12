@@ -21,6 +21,10 @@ boton.addEvenListener("click", "funcion(cerrarbanner)", "booleano--> false")--> 
 
 document.getElementById("id_banner").addEvenLoistener("click", "funcion(cerrarbanner)", "booleano--> false")--> esta escuchando
 
+.addClass(Añade el nombre de una clase)
+
+.removeClass(esa clase deje de existir para un elemento)
+
 */
 /*
 document. querySelectorAll("identidicadod img")
