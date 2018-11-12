@@ -22,5 +22,12 @@ boton.addEvenListener("click", "funcion(cerrarbanner)", "booleano--> false")--> 
 document.getElementById("id_banner").addEvenLoistener("click", "funcion(cerrarbanner)", "booleano--> false")--> esta escuchando
 
 */
+/*
+document. querySelectorAll("identidicadod img")
 
+for (var i=0, imagenes,lengh,; i++){
+    imagenes[i].addEvenlistener
+}
+
+*/
 });
