@@ -29,9 +29,27 @@ document.getElementById("id_banner").addEvenLoistener("click", "funcion(cerrarba
 /*
 document. querySelectorAll("identidicadod img")
 
+for
+
+
 for (var i=0, imagenes,lengh,; i++){
     imagenes[i].addEvenlistener
 }
+
+querySelectorAll
+
+for
+
+function aumentar(e){
+if(e.target==aumento){
+    sitio=texto1
+}
+}
+var porDefecto=$sitio.css("font-size");
+pordefecto.parsetInt();
+pordefecto*1.1:
+
+
 
 */
 });

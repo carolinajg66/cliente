@@ -1,72 +1,113 @@
 <!DOCTYPE <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="utf-8" />
     <title>DAW</title>
-    <link rel="stylesheet" href="../css/css2.css" />
+    <link rel="stylesheet" href="../css/css3.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
- 
+
 </head>
+
 <body>
-    
+
     <header>
 
         <h1>TITULO </h1>
-            
+
     </header>
 
 
     <section>
-      
+
         <table id="id_Enlaces">
 
-            <tr>
-                <td><a href="https://www.google.es/"></a>Google (Navegador)</td>
+            <tr class="cl_navegador">
+                <td><a href="https://www.google.es/">Google (Navegador)</a></td>
 
             </tr>
 
-            <tr>
-                <td><a href="https://www.dailymotion.com/es"></a>Daily Motion(video) </td>
+            <tr class="cl_videos">
+                <td><a href="https://www.dailymotion.com/es">Daily Motion(video)</a></td>
+
+            </tr>
+            <tr class="cl_navegador">
+                <td><a href="https://www.bing.com/?setlang=es">Bing (Navegador)</a></td>
+
+            </tr>
+            <tr class="cl_noticias">
+                <td><a href="https://elpais.com/">Pais(Noticias)</a></td>
+
+            </tr>
+            <tr class="cl_videos">
+                <td><a href="https://www.youtube.com/?gl=ES&hl=es">Youtube0(video)</a></td>
+
+            </tr>
+            <tr class="cl_noticias">
+                <td><a href="https://www.abc.es/">ABC (Noticias)</a> </td>
 
             </tr>
             <tr>
-                <td><a href="https://www.bing.com/?setlang=es"></a>Bing (Navegador)</td>
+                <td> <button id="id_videos">Videos</button> </td>
+                <td> <button id="id_info">Noticias</button> </td>
+                <td> <button id="id_navegador">Navegador</button> </td>
+
+            </tr>
+ 
+        </table>
+
+        <table id="id_EnlacesUno">
+
+            <tr class="cla_navegador">
+                <td><a href="https://www.google.es/">Google (Navegador)</a></td>
 
             </tr>
 
+            <tr class="cla_videos">
+                <td><a href="https://www.dailymotion.com/es">Daily Motion(video)</a></td>
+
+            </tr>
+            <tr class="cla_navegador">
+                <td><a href="https://www.bing.com/?setlang=es">Bing (Navegador)</a></td>
+
+            </tr>
+            <tr class="cla_noticias">
+                <td><a href="https://elpais.com/">Pais(Noticias)</a></td>
+
+            </tr>
+            <tr class="cla_videos">
+                <td><a href="https://www.youtube.com/?gl=ES&hl=es">Youtube0(video)</a></td>
+
+            </tr>
+            <tr class="cla_noticias">
+                <td><a href="https://www.abc.es/">ABC (Noticias)</a> </td>
+
+            </tr>
+            <br>
             <tr>
-                <td><a href="https://www.youtube.com/?gl=ES&hl=es"></a>Youtube(video) </td>
+                <td><input type="checkbox" name="check" value="video" id="ch_videos">Videos</td>
+                <td><input type="checkbox" name="check" value="noticia" id="ch_noticias" >Noticias</td>
+                <td><input type="checkbox" name="check" value="navegador" id="ch_navegador">Navegador</td>
 
             </tr>
-
-
 
         </table>
-        
-        //dos videos
-        //dos redes socuales
-        //dos informacicon
-
-
-        <button  id="id_videos">Videos</button>
-
-        <button  id="id_info" >Google</button>
-
 
 
     </section>
 
 
-   
-    
+
+
 
     <footer>
-            <p>Creado por: Ana Carolina Justiniano Guzman</p>
-            <p>2 DAW</p>
-            <p>Ies Serpis</p>
+        <p>Creado por: Ana Carolina Justiniano Guzman</p>
+        <p>2 DAW</p>
+        <p>Ies Serpis</p>
 
 
     </footer>
 
     <script type="text/javascript" src="../javascript/Ejercicio4.js"></script>
+
 </html>
