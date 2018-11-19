@@ -5,16 +5,17 @@ $(document).ready(function(){
     
 
   
-    for (var i=0; i<boton.lengh; i++){
-        
+    for (var i=0; boton.length ; i++){ 
+   
+        //alert("hola");
         boton[i].addEventListener("click", aumentar, false);
         //boton[i].addEventListener("click", disminuir, false);
     }
 
         function aumentar(e){
-            //var sitio; 
-            alert(e.target.id);
-          /*
+            var sitio; 
+            //alert(e.target.id);
+          
             if(e.target==aumento1){
                 sitio="#textoUno";
 
@@ -31,7 +32,7 @@ $(document).ready(function(){
             $(sitio).css("font-size", porDefecto*1.1);*/
         }
 
-/*
+
         function disminuir(e){
             var lugar; 
           
