@@ -13,16 +13,15 @@ $(document).ready(function(){
 
         function aumentar(e){
             var sitio; 
-            //alert(e.target.id);
           
             if(e.target==id_aumento1){
-                sitio="#textoUno";
+                sitio=".textoUno";
 
             }else if(e.target==id_aumento2){
-                sitio="#textoDos";
+                sitio=".textoDos";
                 
             }else if(e.target==id_aumento3){
-                sitio="#textoTres";
+                sitio=".textoTres";
             }
             var porDefecto = $(sitio).css("font-size");
 
@@ -33,22 +32,22 @@ $(document).ready(function(){
 
 
         function disminuir(e){
-            var lugar; 
+            var sitioD; 
           
-            if(e.target==disminuir1){
-                lugar="#textoUno";
+            if(e.target==id_disminuir1){
+                sitioD=".textoUno";
 
-            }else if(e.target==disminuir2){
-                lugar="#textoDos";
+            }else if(e.target==id_disminuir2){
+                sitioD=".textoDos";
                 
-            }else if(e.target==disminuir3){
-                lugar="#textoTres";
+            }else if(e.target==id_disminuir3){
+                sitioD=".textoTres";
             }
-            var porDefecto = $(lugar).css("font-size");
+            var porDefecto = $(sitioD).css("font-size");
 
             porDefecto=parseInt(porDefecto);
 
-            $(sitio).css("font-size", porDefecto*1.1);
+            $(sitioD).css("font-size", porDefecto/1.1);
         }
 
        
