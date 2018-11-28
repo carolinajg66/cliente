@@ -1,5 +1,7 @@
 /*Galeria de imagenes. cambia una imagen en blanco y negro por otra en color. Y, un filtro por botones */
 
+$(document).ready(function(){
+
 document.querySelectorAll("img");
 
 for(var i=0; i<imagenes.lengt; i++){
@@ -8,7 +10,7 @@ for(var i=0; i<imagenes.lengt; i++){
 
 }
 
-function activa(e){
+function active(e){
 
     if(e.target==img1){
        $("#img1").attr("src","img/img1.png" );
@@ -23,58 +25,57 @@ function activa(e){
        $("#img4").attr("src","img/img4.png" );
     }
     if(e.target==img4){
-        $("#img4").attr("src","img/img4.png" );
+        $("#img5").attr("src","img/img4.png" );
     }
     if(e.target==img4){
-        $("#img4").attr("src","img/img4.png" );
+        $("#img6").attr("src","img/img4.png" );
     }
     if(e.target==img4){
-        $("#img4").attr("src","img/img4.png" );
+        $("#img7").attr("src","img/img4.png" );
     }
     if(e.target==img4){
-        $("#img4").attr("src","img/img4.png" );
+        $("#img8").attr("src","img/img4.png" );
     }
     if(e.target==img4){
-        $("#img4").attr("src","img/img4.png" );
+        $("#img9").attr("src","img/img4.png" );
     }
     if(e.target==img4){
-        $("#img4").attr("src","img/img4.png" );
+        $("#img10").attr("src","img/img4.png" );
     }
     if(e.target==img4){
-        $("#img4").attr("src","img/img4.png" );
+        $("#img11").attr("src","img/img4.png" );
     }
     if(e.target==img4){
-        $("#img4").attr("src","img/img4.png" );
+        $("#img12").attr("src","img/img4.png" );
     }
     if(e.target==img4){
-        $("#img4").attr("src","img/img4.png" );
+        $("#img13").attr("src","img/img4.png" );
     }
     if(e.target==img4){
-        $("#img4").attr("src","img/img4.png" );
+        $("#img14").attr("src","img/img4.png" );
     }
     if(e.target==img4){
-        $("#img4").attr("src","img/img4.png" );
+        $("#img15").attr("src","img/img4.png" );
     }
     if(e.target==img4){
-        $("#img4").attr("src","img/img4.png" );
+        $("#img16").attr("src","img/img4.png" );
     }
     if(e.target==img4){
-        $("#img4").attr("src","img/img4.png" );
+        $("#img17").attr("src","img/img4.png" );
     }
     if(e.target==img4){
-        $("#img4").attr("src","img/img4.png" );
+        $("#img18").attr("src","img/img4.png" );
     }
     if(e.target==img4){
-        $("#img4").attr("src","img/img4.png" );
+        $("#img19").attr("src","img/img4.png" );
     }
     if(e.target==img4){
-        $("#img4").attr("src","img/img4.png" );
+        $("#img20").attr("src","img/img4.png" );
     }
-
-     
+ 
 }
 
-function desactiva(){
+function desactive(){
     if(e.target==img1){
         $("#img1").attr("src","img/img1.png" );
     }
@@ -90,4 +91,4 @@ function desactiva(){
  $("#img1").attr("src","img/img2.png" );
  }
 
-}
+});
