@@ -4,10 +4,13 @@ $(document).ready(function(){
 
 var imagenes=document.querySelectorAll("img");
 
-var criaturas=document.getElementById("id_criaturas");
-var patronus=document.getElementById("id_patronum");
-var maleficos=document.getElementById("id_maleficos");
-var personajes=document.getElementById("id_personajes");
+var criaturas=document.getElementById("id_criaturas").addEventListener("click", soloCriaturas, false);
+var patronus=document.getElementById("id_patronum").addEventListener("click", soloPatromum, false);
+var maleficos=document.getElementById("id_maleficos").addEventListener("click", soloMaleficos, false);
+var personajes=document.getElementById("id_personajes").addEventListener("click", soloPersonajes, false);
+
+var mostrarTodo=document.getElementById("id_mostrarTodo").addEventListener("click", solomostrarTodo, false);
+
 
 
 for(var i=0; imagenes.length; i++){
@@ -18,11 +21,123 @@ for(var i=0; imagenes.length; i++){
 }
 });
 
+function solomostrarTodo(){
+
+    mostrarCriautras();
+    mostrarmaleficos();
+    mostrarpatronus();
+    mostrarpersonajes();
+
+
+}
+
+function soloCriaturas(){
+
+    ocultarmaleficos();
+    ocultarpatronus();
+    ocultarpersonajes();
+    mostrarCriautras();
+}
+
+function soloPatromum(){
+
+    ocultarCriautras();
+    ocultarmaleficos();
+    ocultarpersonajes();
+    mostrarpatronus();
+}
+
+function soloMaleficos(){
+
+    ocultarCriautras();
+    ocultarpatronus();
+    ocultarpersonajes();
+    mostrarmaleficos();
+}
+
+function soloPersonajes(){
+
+    ocultarCriautras();
+    ocultarmaleficos();
+    ocultarpatronus();
+    mostrarpersonajes();
+
+}
+
+function ocultarCriautras(){
+
+    $("#img1").hide();
+    $("#img11").hide();
+    $("#img15").hide();
+    $("#img4").hide();
+    $("#img9").hide();
+   
+}
+
+function ocultarpatronus(){
+
+    $("#img6").hide();
+    $("#img17").hide();
+    $("#img8").hide();
+    $("#img2").hide();
+    $("#img10").hide();
+   
+}
+
+function ocultarmaleficos(){
+
+    $("#img3").hide();
+    $("#img12").hide();
+    $("#img16").hide();
+    $("#img19").hide();
+    $("#img7").hide();
+
+}
+function ocultarpersonajes(){
+
+    $("#img5").hide();
+    $("#img13").hide();
+    $("#img18").hide();
+    $("#img14").hide();
+    $("#img20").hide();
+}
 
 function mostrarCriautras(){
 
-   // mostrar y colultar imagenes jquery
+    $("#img1").show();
+    $("#img11").show();
+    $("#img15").show();
+    $("#img4").show();
+    $("#img9").show();
+   
+}
 
+function mostrarpatronus(){
+
+    $("#img6").show();
+    $("#img17").show();
+    $("#img8").show();
+    $("#img2").show();
+    $("#img10").show();
+   
+}
+
+function mostrarmaleficos(){
+
+    $("#img3").show();
+    $("#img12").show();
+    $("#img16").show();
+    $("#img19").show();
+    $("#img7").show();
+
+}
+function mostrarpersonajes(){
+
+    $("#img5").show();
+    $("#img13").show();
+    $("#img18").show();
+    $("#img14").show();
+    $("#img20").show();
 }
 
 
