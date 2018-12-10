@@ -1,3 +1,4 @@
+/*PARTE UNO EJERCICIO CARRITO*/
 $(function(){
 
     var items=document.getElementsByClassName("item");

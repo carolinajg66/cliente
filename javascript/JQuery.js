@@ -217,8 +217,15 @@ function desactiva(){
   
 
 
+
+
+
+
+
+for (){
+  var fila=document.createElement()
+
+ tabla= set atributte
+}
+
 */
-
-
-
-});
