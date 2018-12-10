@@ -11,8 +11,6 @@ $(function(){
 
     }
    
-
-
     //var stock=document.getElementsByClassName("stock");
 
   
@@ -22,11 +20,9 @@ $(function(){
 
 function articulosDisponibles(e){
 
-  
 
     $(this).css("background-color", "blue");
 
-    
 
    /* var hola=$(stock).substring(7, 8);
 
