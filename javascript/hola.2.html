@@ -3,23 +3,39 @@
 <head>
   <link rel="stylesheet" type="text/css" href="css/default.css" />
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
-  
+  <style>
+    .hidden {
+      display: none;
+    }
+  </style>
 <script type="text/javascript">		
   $(document).ready(function(){
-    $("#video").hide();
-  $("#wrap").mouseover(function(){
-   $("#video").stop().slideDown("slow");
-  });
-  $("#wrap").mouseout(function(){
-   $("#video").slideUp("slow");
-  });
+
+
+    function onMouseOver(ev) {
+      $(".hidden").stop();
+      $(".hidden").fadeIn(100);
+    }
+
+    
+    function onMouseOut(ev) {
+      $(".hidden").stop();
+      $(".hidden").fadeOut(100);
+    }
+  
+    $("#wrap").bind("mouseover", onMouseOver, false);
+    $("#wrap").bind("mouseout", onMouseOut, false);
+
  });
 </script>
 </head>
 <body>
     <div id="wrap">
-        <div id="text">text</div>
-        <div id="video">video</div>
+        <p id="header">Hola mundo</p>
+        <div><a id="text" href="#" class="hidden" title="Opción 1">Opción 1</a></div>
+        <div><a id="video" href="#" class="hidden" title="Opción 2">Opción 2</a></div>
+        <!--  <div id="text">text</div>
+        <div id="video">video</div>-->
     </div>
 
 
