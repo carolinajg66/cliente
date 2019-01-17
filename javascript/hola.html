@@ -1,43 +1,201 @@
-<!DOCTYPE html >
-<html lang="es">
+<!DOCTYPE html>
+<html lang="es-ES">
+
 <head>
-  <link rel="stylesheet" type="text/css" href="css/default.css" />
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
-  
-<script type="text/javascript">		
-  $(document).ready(function(){ // Script del Navegador
-
-    		
-    $("#contenido-demo").mouseover(function(){
-    $("ul.subnavegador").hide();
-    $("ul.subnavegador").stop().slideDown("slow");
-  });
-
-  $("#contenido-demo").mouseout(function(){
-
-    $("ul.subnavegador").slideUp("slow");
-  });
- 
-});
-</script>
+    <meta charset="UTF-8">
+    <title>Menu desplegable con 2 niveles</title>
+    <style>
+    #menu {
+        width: 500px;
+        margin: 0 auto
+    }
+    #menu>ul>li {
+        float: left
+    }
+    #menu>ul>li a {
+        display: block;
+        width: 100px;
+        height: 50px;
+        background: green;
+        text-align: center;
+        line-height: 50px
+    }
+    #menu>ul>li>ul {
+        display: none
+    }
+    #menu>ul>li>ul>li {
+        position: relative
+    }
+    #menu>ul>li>ul>li>a {
+        background: red
+    }
+    #menu>ul>li>ul>li>ul {
+        position: absolute;
+        left: 100px;
+        top: 0;
+        display: none
+    }
+    #menu>ul>li>ul>li>ul a {
+        background: #ff0
+    }
+    #menu ul {
+        list-style: none;
+        margin: 0;
+        padding: 0
+    }
+    </style>
 </head>
+
 <body>
-  <div id="contenido-demo">	
-   <h2>Menú vertical desplegable con jQuery</h2>
- 
-   <ul class="navegador">
-    <li><a href="#" title="Opción 1">Opción 1</a></li>
-    <li><a href="#" title="Opción 2">Opción 2</a></li>
-    <li><a href="#" class="desplegable" title="Opción 3">Opción 3</a>
-      <ul class="subnavegador">
-        <li><a href="http://www.google.es" title="Ir a Sub-Opción 3-1">Sub-Opción 3-1</a></li>
-        <li><a href="#" title="Ir a Sub-Opción 3-2">Sub-Opción 3-2</a></li>			
-        <li><a href="#" title="Ir a Sub-Opción 3-3">Sub-Opción 3-3</a></li>
-        <li><a href="#" title="Ir a Sub-Opción 3-4">Sub-Opción 3-4</a></li>
-      </ul>
-    </li>	
+    <nav id="menu">
+        <ul>
+            <li><a href="#">Lorem.</a>
+            </li>
+            <li><a href="#">Repellendus.</a>
+                <ul>
+                    <li><a href="#">Lorem.</a>
+                    </li>
+                    <li><a href="#">Voluptate.</a>
+                    </li>
+                    <li><a href="#">Nesciunt.</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Fugiat!</a>
+            </li>
+            <li><a href="#">Fuga.</a>
+            </li>
+            <li><a href="#">Ea.</a>
+                <ul>
+                    <li><a href="#">Lorem.</a>
+                    </li>
+                    <li><a href="#">At.</a>
+                    </li>
+                    <li><a href="#">Ratione?</a>
+                    </li>
+                    <li><a href="#">Optio.</a>
+                        <ul>
+                            <li><a href="#">Lorem.</a>
+                            </li>
+                            <li><a href="#">Voluptas!</a>
+                            </li>
+                            <li><a href="#">Error?</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Asperiores.</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $menu = $('#menu').find('ul').find('li');
+
+        $menu.hover(function() {
+            $(this).children('ul').stop();
+            $(this).children('ul').slideDown();
+        }, function() {
+            $(this).children('ul').stop();
+            $(this).children('ul').slideUp();
+        });
+    });
+    </script>
+    <style>
+      #menu2 {
+          width: 500px;
+          margin: 3em auto;
+      }
+      #menu2>ul>li {
+          display: block;
+      }
+      #menu2>ul>li a {
+          display: block;
+          width: 100px;
+          height: 50px;
+          background: #ECF23A;
+          text-align: center;
+          line-height: 50px;
+          color: black;
+      }
+      #menu2>ul>li>ul {
+          display: none
+      }
+      #menu2>ul>li>ul>li {
+          position: relative
+      }
+      #menu2>ul>li>ul>li>a {
+          background: #F2A63A;
+          color: black;
+      }
+      #menu2>ul>li>ul>li>ul {
+          position: absolute;
+          left: 100px;
+          top: 0;
+          display: none
+      }
+      #menu2>ul>li>ul>li>ul a {
+          background: #A69D90
+      }
+      #menu2 ul {
+          list-style: none;
+          margin: 0;
+          padding: 0
+      }
+      </style>
+      <nav id="menu2">
+          <ul>
+              <li><a href="#">Enero</a>
+                  <ul>
+                      <li><a href="#">Semana 1</a>
+                      </li>
+                      <li><a href="#">Semana 2</a>
+                      </li>
+                      <li><a href="#">Semana 3</a>
+                      </li>
+                  </ul>
+              </li>
+              <li><a href="#">Febrero</a>
+                  <ul>
+                      <li><a href="#">Semana 1</a>
+                      </li>
+                      <li><a href="#">Semana 2</a>
+                      </li>
+                      <li><a href="#">Semana 3</a>
+                      </li>
+                      <li><a href="#">Semana 4</a>
+                          <ul>
+                              <li><a href="#">Lunes</a>
+                              </li>
+                              <li><a href="#">Martes</a>
+                              </li>
+                              <li><a href="#">Miercoles</a>
+                              </li>
+                          </ul>
+                      </li>
+                      <li><a href="#">Semana 5</a>
+                      </li>
+                  </ul>
+              </li>
+              <li><a href="#">Marzo</a></li>
+          </ul>
+      </nav>
+      <script>
+      $(document).ready(function() {
+          $menu = $('#menu2').find('ul').find('li');
   
-  </ul>
- </div>	
+          $menu.hover(function() {
+              $(this).children('ul').stop();
+              $(this).children('ul').slideDown();
+          }, function() {
+              $(this).children('ul').stop();
+              $(this).children('ul').slideUp();
+          });
+      });
+      </script>
+  
 </body>
+
 </html>
