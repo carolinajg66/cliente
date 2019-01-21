@@ -7,6 +7,8 @@ $(function(){
     http://jsfiddle.net/ZyUYN/
     //.val para coger infomacion de los input
     //En el boton ponemos type=submmit 
+    //https://developer.mozilla.org/es/docs/Trazado_de_una_tabla_HTML_mediante_JavaScript_y_la_Interface_DOM
+    //https://codepen.io/Rueb/pen/yVroQm
 
     $("#form_DATOS").submit(function(){
 
