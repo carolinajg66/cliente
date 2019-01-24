@@ -22,7 +22,9 @@ function genera_tabla() {
         //var textoCelda = document.createTextNode("celda en la fila "+i+", columna "+j);
         var imag=document.createElement("img");
         var w=i+j; 
+        alert(w);
         imagenes[w].setAttribute("src","../img/img1/fila-"+i+"-col-"+j+".jpg");
+        w++;
         
         //var src='../img/img1/fila-"+i+"-col-"+j+".jpg';
         //var imagenes;
