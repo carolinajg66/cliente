@@ -1,0 +1,45 @@
+body{
+    background-color:white;
+}
+
+html,body,h2,h3,h4,h5,h6 {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+h1{
+    text-align: center;
+    color: aqua;
+    border:purple 5px inset;
+    font-family: "Comic Sans MS", Bold, sans-serif;
+
+}
+
+footer{
+
+    text-align: left;
+    font-size: 10px;
+    border:black 2px solid;
+    float: bottom;
+    align-self: bottom;
+}
+body{
+    margin-left: 60px;
+    margin-right:60px;
+}
+
+aside { 
+    
+    float: left;
+    text-align: center;
+    border: black 2px solid;
+  
+}
+section{
+    /*height: 500px;*/
+
+    background-color: lightpink;
+}
+img{
+    height: 95px;
+    width: 95px;
+}
