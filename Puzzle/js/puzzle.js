@@ -43,3 +43,4 @@ function genera_tabla() {
     section.appendChild(table);
     table.setAttribute("border", "2");
   }
+  

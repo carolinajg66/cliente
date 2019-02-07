@@ -38,6 +38,7 @@ function genera_tabla() {
   tabla.setAttribute("border", "2");
 }
 
+
 function genera_tabla_dos() {
 
   var lista = [
@@ -56,13 +57,15 @@ function genera_tabla_dos() {
     "img/img1/img12.jpg",
     "img/img1/img13.jpg",
     "img/img1/img14.jpg",
-    "img/img1/img15.jpg"
+    "img/img1/img15.jpg",
 
   ]
 
   lista = lista.sort(function () { return Math.random() - 0.5 });
-
-  //console.log(lista);
+ 
+  
+  //delete lista[];
+  //lista.splice(15);
 
   var section = document.getElementsByTagName("section")[0];
 
@@ -109,8 +112,6 @@ function genera_tabla_dos() {
 
       celda.append(miImagen);
       hilera.appendChild(celda);
-
-        //contador++;
     }
     tblBody.appendChild(hilera);
 
